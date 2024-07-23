@@ -192,6 +192,5 @@ Sample output:
 ```
 ## Notes
 - All prices shown are in USD
--  
 
 
