@@ -33,7 +33,7 @@ These utilities include the following scripts:
 ## Demo hpc-vm-availability.py 
 `hpc-vm-availability.py`is designed to retrieve a list of available VM Sizes in a given region. It also queries the Retail Prices API to obtain the PAYGO pricing for the list of SKUs that is generated assuming that a Linux OS is used. Note, this tool is designed to run with multiple threads to speed-up the time it takes to query the Prices API and build the output. The output of this script is similar to what you would get if you ran the following Azure CLI command `az vm list-sizes --location "eastus"`. Note that the default behavior of this tool only shows HPC+AI SKUs (HB, HC, HX, NP, NC, ND, NG, and NV), but there is an option to modify the filter if one is also interested in querying for other SKU types:
 
-The run the appliation you simply do the following: 
+To run the appliation you simply do the following: 
 ```
 ./hpc-vm-availability.py -l <region>
 ```
@@ -172,7 +172,7 @@ sys     0m0.787s
 ## Demo az-prycing.py
 `az-pricing.py`is designed to retrieve pricing information for a given SKU in a given region. It lists the PAYGO (Standard), Spot, and the Low Priority hourly rate of running the SKU in the given region. 
 
-The run the appliation you simply do the following: 
+To run the appliation you simply do the following: 
 ```
 ./az-pricing.py -l <region> -s SKU
 ```
